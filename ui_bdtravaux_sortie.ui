@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>806</width>
-    <height>553</height>
+    <height>668</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>615</x>
-     <y>517</y>
+     <y>630</y>
      <width>176</width>
      <height>27</height>
     </rect>
@@ -35,7 +35,7 @@
      <x>10</x>
      <y>0</y>
      <width>781</width>
-     <height>510</height>
+     <height>623</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -48,7 +48,7 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>3</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab_quand">
     <property name="toolTip">
@@ -67,9 +67,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>22</y>
        <width>311</width>
-       <height>131</height>
+       <height>198</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -81,35 +81,43 @@
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="obsv">
+       <widget class="QListWidget" name="obsv">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
         <item>
          <property name="text">
-          <string>Alexis Thery</string>
+          <string>Alexis Thery / AT</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Anthony Vasseux</string>
+          <string>Anthony Vasseux / AV</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Mathieu Loquet</string>
+          <string>Kevin Guaquier / KG</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Quentin Vanquelef</string>
+          <string>Matthieu Loquet / ML</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Sandrine Gougaud</string>
+          <string>Quentin Vanquelef /QV</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Simon Bezille</string>
+          <string>Sandrine Gougaud / SG</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Simon Bezille / SB</string>
          </property>
         </item>
        </widget>
@@ -129,13 +137,13 @@
     <widget class="QWidget" name="verticalLayoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>370</x>
-       <y>20</y>
-       <width>391</width>
-       <height>321</height>
+       <x>404</x>
+       <y>21</y>
+       <width>349</width>
+       <height>261</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="vertlayout_date">
       <item>
        <widget class="QLabel" name="lbl_date">
         <property name="text">
@@ -176,8 +184,8 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>200</y>
+       <x>11</x>
+       <y>236</y>
        <width>227</width>
        <height>17</height>
       </rect>
@@ -190,7 +198,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>230</y>
+       <y>260</y>
        <width>341</width>
        <height>141</height>
       </rect>
@@ -258,7 +266,7 @@
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>410</y>
+       <y>440</y>
        <width>301</width>
        <height>27</height>
       </rect>
@@ -268,7 +276,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>380</y>
+       <y>410</y>
        <width>227</width>
        <height>22</height>
       </rect>
@@ -279,6 +287,75 @@
      <attribute name="buttonGroup">
       <string notr="true">objetvisite</string>
      </attribute>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>403</x>
+       <y>310</y>
+       <width>360</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="vertlayout_datefin">
+      <item>
+       <widget class="QLabel" name="lbl_datefin">
+        <property name="text">
+         <string>Date de fin de sortie sur le terrain (si plusieurs jours)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCalendarWidget" name="datefin">
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Date de début de l'opération</string>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="firstDayOfWeek">
+         <enum>Qt::Monday</enum>
+        </property>
+        <property name="verticalHeaderFormat">
+         <enum>QCalendarWidget::ISOWeekNumbers</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>484</y>
+       <width>364</width>
+       <height>89</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="vlayout_plsrsdates">
+      <item>
+       <widget class="QLabel" name="lbl_plsrsdates">
+        <property name="text">
+         <string>Dates de la sortie, si plusieurs. Format : jj/mm/aaaa</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="plsrsdates"/>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_comm">
@@ -395,6 +472,21 @@
         <item>
          <property name="text">
           <string>Blongios</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Commune de Ligny-sur-Canche</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Commune de Noeux-les-Auxi</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ecole de Noeux-les-Auxi</string>
          </property>
         </item>
         <item>
@@ -551,40 +643,64 @@
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="0" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="1" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="1" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="2" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="2" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="3" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="3" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
          </widget>
@@ -654,40 +770,64 @@
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="0" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="1" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="1" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="2" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="2" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
           <item row="3" column="0">
            <property name="text">
             <string>0</string>
            </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
+           </property>
           </item>
           <item row="3" column="1">
            <property name="text">
             <string>0</string>
+           </property>
+           <property name="toolTip">
+            <string>Ne saisir que des nombres entiers</string>
            </property>
           </item>
          </widget>
@@ -737,12 +877,62 @@
       <property name="text">
        <string>0</string>
       </property>
+      <property name="toolTip">
+       <string>Ne saisir que des nombres entiers</string>
+      </property>
      </item>
      <item row="0" column="1">
       <property name="text">
        <string>0</string>
       </property>
+      <property name="toolTip">
+       <string>Ne saisir que des nombres entiers</string>
+      </property>
      </item>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_exsortie">
+    <attribute name="title">
+     <string>Réimprimer une sortie</string>
+    </attribute>
+    <widget class="QLabel" name="lbl_exsortiechx">
+     <property name="geometry">
+      <rect>
+       <x>29</x>
+       <y>15</y>
+       <width>340</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sélectionner une sortie à réimprimer :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_imp_exsortie">
+     <property name="geometry">
+      <rect>
+       <x>316</x>
+       <y>51</y>
+       <width>98</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Impression</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbx_exsortie">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>51</y>
+       <width>278</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="maxVisibleItems">
+      <number>50</number>
+     </property>
     </widget>
    </widget>
   </widget>
